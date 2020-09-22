@@ -121,6 +121,12 @@
 	width: calc(100% - 280px);
 }
 
+.fix-1 {
+	margin-top: -10px;
+}
+.fix-2 {
+	margin-top: -8px;
+}
 .img-block {
 	margin-bottom: 40px;
 
@@ -138,7 +144,7 @@
 	font-weight: 300;
 	color: rgba(#000, .6);
 	position: relative;
-	padding: 40px 0;
+	padding: 20px 0;
 	font-style: italic;
 
 	&::before {
@@ -151,7 +157,7 @@
 	}
 
 	&::before {
-		top: 0;
+		top: -7%;
 		left: 0;
 		transform: translateX(-150%);
 	}
@@ -184,3 +190,9 @@
 		width: 100%;
 	}
 }
+
+/* my code */
+
+
+
+/* / my code */

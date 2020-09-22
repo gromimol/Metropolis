@@ -1,0 +1,50 @@
+
+.text-conditions {
+    padding: 100px 0;
+
+    h1 {
+        font-size: 40px;
+        margin-top:10px;
+        margin-bottom:10px;
+
+    }
+    h2 {
+        font-size: 30px;
+        margin-top:10px;
+        margin-bottom:10px;
+        
+    }
+    h3 {
+        font-size: 24px;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+
+}
+.ul-conditions {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    font-size: 1.2rem;
+    li {
+        margin-bottom: 1em;
+        list-style-type: disc;
+        a {
+            color: var(--green);
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.ol-conditions {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 26px;
+    font-size: 1.2rem;
+    li {
+        margin-bottom: 1em;
+        list-style-type:decimal-leading-zero;
+    }
+}

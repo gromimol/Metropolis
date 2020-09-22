@@ -76,13 +76,7 @@
 	}
 
 	&:last-child {
-		padding-left: 92px;
 		border-right: none;
-	}
-
-	&:first-child {
-		padding-left: 0;
-		border-right: 1px solid rgba(#E8E8E8, .8);
 	}
 
 	&:hover {
@@ -103,3 +97,18 @@
 	align-items: center;
 	justify-content: center;
 }
+
+/* My code */
+
+.reviews__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	a { 
+		width: 50%;
+	}
+}
+.documents {
+	max-width: 860px;
+    margin: 0 auto;
+}
+/* / My code */

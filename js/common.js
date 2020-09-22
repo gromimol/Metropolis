@@ -193,10 +193,18 @@ $(document).ready(function () {
     ],
   });
 
-  $(".project-detail-item .team-detail__projects__item").on(
-    "click",
+  $(".project-detail-item .team-detail__projects__item ").mouseenter(
     function () {
-      $(this).closest(".project-detail-item").toggleClass("active");
+      $(this).closest(".project-detail-item").addClass("active");
+      $(this)
+        .closest(".project-detail-item")
+        .find(".project-detail-item__content")
+        .slideToggle();
+    }
+  );
+  $(".project-detail-item__content").mouseleave(
+    function () {
+      $(this).closest(".project-detail-item").removeClass("active");
       $(this)
         .closest(".project-detail-item")
         .find(".project-detail-item__content")
@@ -204,7 +212,7 @@ $(document).ready(function () {
     }
   );
 
-  // input
+  input
   $(".input__field").change(function () {
     var $this = $(this);
     var $thisInput = $this.find("input");
