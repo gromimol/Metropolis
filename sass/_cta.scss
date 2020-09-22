@@ -1,0 +1,20 @@
+/*cta*/ 
+.cta{
+	padding: 40px 0;
+	.container{
+		position: relative;
+	}
+}
+.to-top{
+	width: 20px;
+	height: 20px;
+	background:transparent url('../img/icons/arrow_top.svg') left top no-repeat;
+	background-size: contain;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	&:hover{
+		opacity: .5;
+	}
+}

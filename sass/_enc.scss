@@ -1,0 +1,32 @@
+.project-detail-item{
+	border-bottom: 1px solid rgba(#000, .1);
+	.arrow-in-end{
+		border-bottom: none;
+		cursor: pointer;
+		transition: color .3s;
+		&:hover{
+			color: var(--green);
+		}
+	}
+	&.active{
+		.arrow-in-end{
+			&::after{
+				transform: rotate(90deg);
+			}
+		}
+	}
+	& + .event-item {
+		margin-top: 30px;
+	}
+}
+.project-detail-item__content{
+	font-size: 14px;
+	text-transform: uppercase;
+	color: rgba(#010101, .6);
+	line-height: 2.2;
+	padding: 20px 20px 0 20px;
+	display: none;
+	li{
+		margin-bottom: 15px;
+	}
+}

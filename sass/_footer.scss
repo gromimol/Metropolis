@@ -1,0 +1,32 @@
+/*Footer*/ 
+.footer{
+	border-top: 1px solid #E5E5E5;
+	padding: 40px 0;
+	font-size: 13px;
+	text-transform: uppercase;
+	a{
+		color: #BDBDBD;
+		white-space: nowrap;
+		span{
+			color: #000
+		}
+		&:hover{
+			color: #000
+		}
+	}
+	.social a{
+		color: #000
+	}
+}
+.copy{
+	color: #BDBDBD;
+	margin-left: 50px;
+}
+.footer__right{
+	a{
+		display: block;
+		&:not(:first-child){
+			margin-left: 50px;
+		}
+	}
+}

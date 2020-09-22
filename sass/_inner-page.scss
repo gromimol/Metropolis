@@ -1,0 +1,186 @@
+/*inner-page*/
+.inner-page {
+	.header {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 2;
+	}
+}
+
+.inner-page-top {
+	position: relative;
+
+	.main-screen {
+		height: auto;
+		height: 620px;
+		overflow: visible;
+
+		&::after {
+			display: none;
+		}
+
+		.slick-dots {
+			display: none;
+		}
+
+		.slick-dotted.slick-slider {
+			margin-bottom: 0;
+		}
+	}
+
+	.main-slide::after {
+		content: '';
+		width: 100%;
+		height: 130px;
+		background: linear-gradient(180.46deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.59) 95.32%);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+.inner-page-block {
+	font-family: var(--second-font);
+	padding-top: 50px;
+
+	.h2 {
+		font-family: var(--main-font);
+	}
+
+	h1,
+	h2,
+	h3,
+	h4 {
+		margin-bottom: 1em;
+		font-family: var(--second-font);
+	}
+
+	h1 {
+		font-size: 36px;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+	.text-block {
+		padding-left: 0;
+		margin-bottom: 20px;
+
+		&::before {
+			transform: translateX(-150%);
+		}
+	}
+}
+
+.inner-page-block__item {
+	margin-bottom: 20px;
+	overflow: hidden;
+	min-height: 260px;
+
+
+	&.float {
+		.inner-page-block__item__img {
+			float: left;
+			margin-right: 40px;
+			transform: translateY(.65em);
+		}
+
+		.inner-page-block__item__text {
+			width: 100%;
+
+			p {
+				margin-bottom: 0.6em;
+			}
+		}
+	}
+}
+
+.inner-page-block__item__img {
+	flex: none;
+	width: 240px;
+
+	img {
+		width: 100%;
+		display: block;
+	}
+}
+
+.img-descr {
+	display: block;
+	font-size: 12px;
+	font-weight: 300;
+	color: rgba(#000, .6);
+	line-height: 1.2;
+	margin-top: 10px;
+}
+
+.inner-page-block__item__text {
+	width: calc(100% - 280px);
+}
+
+.img-block {
+	margin-bottom: 40px;
+
+	img {
+		width: 100%;
+		display: block;
+	}
+}
+
+.notice,
+.notice-italic {
+	max-width: 900px;
+	font-size: 36px;
+	line-height: 1.44;
+	font-weight: 300;
+	color: rgba(#000, .6);
+	position: relative;
+	padding: 40px 0;
+	font-style: italic;
+
+	&::before {
+		content: '“';
+		color: var(--green);
+		font-size: 144px;
+		line-height: 1;
+		position: absolute;
+		opacity: .5;
+	}
+
+	&::before {
+		top: 0;
+		left: 0;
+		transform: translateX(-150%);
+	}
+
+	// &::after {
+	// 	content: '“';
+	// 	bottom: 0;
+	// 	right: 0;
+	// 	transform: translateX(50%) rotate(180deg);
+	// }
+}
+
+.notice-italic {
+	font-family: "RobotoItalic", sans-serif;
+
+	&::after {
+		display: none;
+	}
+
+	&::before {
+		opacity: 1;
+		color: var(--green)
+	}
+}
+
+.full-width-img {
+	margin: 40px 0;
+
+	img {
+		width: 100%;
+	}
+}

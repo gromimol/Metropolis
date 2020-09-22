@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Proj Category</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<!-- <link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png"> -->
+	<!-- Template Basic Images End -->
+
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+	<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+	<!-- Класс main-page нужен на Главной странице -->
+	<div class="wrapper ">
+		<header class="header header--white">
+			<div class="container flex flex--center flex--between">
+				<a href="#" class="logo"></a>
+
+				<ul class="menu flex">
+					<li class="submenu-link">
+						<a href="#" class="active">Проекты</a>
+						<div class="submenu">
+							<div class="container">
+								<ul class="submenu__list">
+									<li><a href="#" class="active">Гостиницы</a></li>
+									<li><a href="#">Высотные и уникальные здания</a></li>
+									<li><a href="#">Многофункциональные комплексы</a></li>
+									<li><a href="#">Офисы</a></li>
+									<li><a href="#">Торговые комплексы</a></li>
+									<li><a href="#">Жилые здания</a></li>
+									<li><a href="#">Объекты культурного назначения</a></li>
+									<li><a href="#">Спортивные объекты</a></li>
+									<li><a href="#">Аквапарки</a></li>
+									<li><a href="#">Наружные сети и проекты организации строительства</a></li>
+									<li><a href="#">все проекты</a></li>
+								</ul>
+
+								<div class="submenu__bottom flex flex--between flex--center">
+									<ul class="social flex">
+										<li>
+											<a href="#">
+												<svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M9.20703 1.08325H3.79036C2.29459 1.08325 1.08203 2.29581 1.08203 3.79159V9.20825C1.08203 10.704 2.29459 11.9166 3.79036 11.9166H9.20703C10.7028 11.9166 11.9154 10.704 11.9154 9.20825V3.79159C11.9154 2.29581 10.7028 1.08325 9.20703 1.08325Z"
+														stroke="currentColor" stroke-linecap="round"
+														stroke-linejoin="round" />
+													<path
+														d="M8.66537 6.15891C8.73222 6.60971 8.65522 7.07011 8.44532 7.47463C8.23543 7.87915 7.90332 8.20718 7.49625 8.41207C7.08918 8.61696 6.62786 8.68828 6.17792 8.61588C5.72798 8.54348 5.31232 8.33104 4.99007 8.00879C4.66782 7.68654 4.45539 7.27089 4.38299 6.82095C4.31059 6.371 4.3819 5.90969 4.5868 5.50262C4.79169 5.09554 5.11972 4.76344 5.52424 4.55354C5.92875 4.34365 6.38915 4.26665 6.83995 4.3335C7.29979 4.40168 7.7255 4.61596 8.0542 4.94466C8.38291 5.27337 8.59718 5.69908 8.66537 6.15891Z"
+														stroke="currentColor" stroke-linecap="round"
+														stroke-linejoin="round" />
+													<path d="M9.48047 3.52075H9.48547" stroke="currentColor"
+														stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg width="9" height="13" viewBox="0 0 9 13" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M8.0013 0.25H6.0013C5.11725 0.25 4.2694 0.57924 3.64428 1.16529C3.01916 1.75134 2.66797 2.5462 2.66797 3.375V5.25H0.667969V7.75H2.66797V12.75H5.33464V7.75H7.33464L8.0013 5.25H5.33464V3.375C5.33464 3.20924 5.40487 3.05027 5.5299 2.93306C5.65492 2.81585 5.82449 2.75 6.0013 2.75H8.0013V0.25Z"
+														fill="currentColor" />
+												</svg>
+
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<g clip-path="url(#clip0)">
+														<path
+															d="M15 2.84815C14.4481 3.09315 13.855 3.25815 13.2325 3.33253C13.8681 2.9519 14.3562 2.34878 14.5856 1.63003C13.9912 1.98253 13.3325 2.23878 12.6312 2.3769C12.0706 1.77878 11.27 1.40503 10.385 1.40503C8.39812 1.40503 6.93813 3.25878 7.38688 5.18315C4.83 5.05503 2.5625 3.83003 1.04438 1.96815C0.238125 3.35128 0.62625 5.16065 1.99625 6.0769C1.4925 6.06065 1.0175 5.92253 0.603125 5.6919C0.569375 7.11753 1.59125 8.45128 3.07125 8.74815C2.63813 8.86565 2.16375 8.89315 1.68125 8.80065C2.0725 10.0232 3.20875 10.9125 4.55625 10.9375C3.2625 11.9519 1.6325 12.405 0 12.2125C1.36187 13.0857 2.98 13.595 4.7175 13.595C10.4313 13.595 13.6594 8.7694 13.4644 4.44128C14.0656 4.0069 14.5875 3.46503 15 2.84815V2.84815Z"
+															fill="currentColor" />
+													</g>
+													<defs>
+														<clipPath id="clip0">
+															<rect width="15" height="15" fill="white" />
+														</clipPath>
+													</defs>
+												</svg>
+
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M10 5.33325C10.9946 5.33325 11.9484 5.75468 12.6517 6.50482C13.3549 7.25497 13.75 8.27239 13.75 9.33325V13.9999H11.25V9.33325C11.25 8.97963 11.1183 8.64049 10.8839 8.39044C10.6495 8.14039 10.3315 7.99992 10 7.99992C9.66848 7.99992 9.35054 8.14039 9.11612 8.39044C8.8817 8.64049 8.75 8.97963 8.75 9.33325V13.9999H6.25V9.33325C6.25 8.27239 6.64509 7.25497 7.34835 6.50482C8.05161 5.75468 9.00544 5.33325 10 5.33325Z"
+														fill="currentColor" />
+													<path d="M3.75 6H1.25V14H3.75V6Z" fill="currentColor" />
+													<path
+														d="M2.5 3.99992C3.19036 3.99992 3.75 3.40296 3.75 2.66659C3.75 1.93021 3.19036 1.33325 2.5 1.33325C1.80964 1.33325 1.25 1.93021 1.25 2.66659C1.25 3.40296 1.80964 3.99992 2.5 3.99992Z"
+														fill="currentColor" />
+												</svg>
+
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M14.0879 4.0125C14.0136 3.71588 13.8624 3.44411 13.6495 3.22463C13.4366 3.00515 13.1696 2.84574 12.8754 2.7625C11.8004 2.5 7.50036 2.5 7.50036 2.5C7.50036 2.5 3.20036 2.5 2.12536 2.7875C1.83114 2.87074 1.56409 3.03015 1.3512 3.24963C1.1383 3.46911 0.9871 3.74088 0.912857 4.0375C0.716116 5.12847 0.61988 6.23519 0.625357 7.34375C0.618344 8.46065 0.714587 9.57581 0.912857 10.675C0.994707 10.9624 1.1493 11.2238 1.3617 11.434C1.5741 11.6443 1.83712 11.7961 2.12536 11.875C3.20036 12.1625 7.50036 12.1625 7.50036 12.1625C7.50036 12.1625 11.8004 12.1625 12.8754 11.875C13.1696 11.7918 13.4366 11.6323 13.6495 11.4129C13.8624 11.1934 14.0136 10.9216 14.0879 10.625C14.2831 9.54224 14.3793 8.44396 14.3754 7.34375C14.3824 6.22685 14.2861 5.11169 14.0879 4.0125V4.0125Z"
+														stroke="currentColor" stroke-linecap="round"
+														stroke-linejoin="round" />
+													<path d="M6.09375 9.38731L9.6875 7.34355L6.09375 5.2998V9.38731Z"
+														stroke="currentColor" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+
+											</a>
+										</li>
+									</ul>
+
+									<a href="#" class="feedback js--popup" data-popup="popup-form">
+										связаться с нами
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="submenu-link">
+						<a href="#">Услуги</a>
+						<div class="submenu">
+							<div class="container">
+								<ul class="submenu__list">
+									<li><a href="#">Генпроектирование</a></li>
+									<li><a href="#">Конструктивные решения</a></li>
+									<li><a href="#">Внутренние инженерные системы</a></li>
+									<li><a href="#">Спецразделы</a></li>
+									<li><a href="#">Информационное моделирование зданий / BIM</a></li>
+									<li><a href="#">Математическое моделирование процессов / CFD</a></li>
+									<li><a href="#">Консалтинговые услуги и технический аудит</a></li>
+									<li><a href="#">Сопровождение иностранных проектных компаний</a></li>
+								</ul>
+
+								<div class="submenu__bottom flex flex--between flex--center">
+									<ul class="social flex">
+										<li>
+											<a href="#">
+												<svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M9.20703 1.08325H3.79036C2.29459 1.08325 1.08203 2.29581 1.08203 3.79159V9.20825C1.08203 10.704 2.29459 11.9166 3.79036 11.9166H9.20703C10.7028 11.9166 11.9154 10.704 11.9154 9.20825V3.79159C11.9154 2.29581 10.7028 1.08325 9.20703 1.08325Z"
+														stroke="currentColor" stroke-linecap="round"
+														stroke-linejoin="round" />
+													<path
+														d="M8.66537 6.15891C8.73222 6.60971 8.65522 7.07011 8.44532 7.47463C8.23543 7.87915 7.90332 8.20718 7.49625 8.41207C7.08918 8.61696 6.62786 8.68828 6.17792 8.61588C5.72798 8.54348 5.31232 8.33104 4.99007 8.00879C4.66782 7.68654 4.45539 7.27089 4.38299 6.82095C4.31059 6.371 4.3819 5.90969 4.5868 5.50262C4.79169 5.09554 5.11972 4.76344 5.52424 4.55354C5.92875 4.34365 6.38915 4.26665 6.83995 4.3335C7.29979 4.40168 7.7255 4.61596 8.0542 4.94466C8.38291 5.27337 8.59718 5.69908 8.66537 6.15891Z"
+														stroke="currentColor" stroke-linecap="round"
+														stroke-linejoin="round" />
+													<path d="M9.48047 3.52075H9.48547" stroke="currentColor"
+														stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg width="9" height="13" viewBox="0 0 9 13" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M8.0013 0.25H6.0013C5.11725 0.25 4.2694 0.57924 3.64428 1.16529C3.01916 1.75134 2.66797 2.5462 2.66797 3.375V5.25H0.667969V7.75H2.66797V12.75H5.33464V7.75H7.33464L8.0013 5.25H5.33464V3.375C5.33464 3.20924 5.40487 3.05027 5.5299 2.93306C5.65492 2.81585 5.82449 2.75 6.0013 2.75H8.0013V0.25Z"
+														fill="currentColor" />
+												</svg>
+
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<g>
+														<path
+															d="M15 2.84815C14.4481 3.09315 13.855 3.25815 13.2325 3.33253C13.8681 2.9519 14.3562 2.34878 14.5856 1.63003C13.9912 1.98253 13.3325 2.23878 12.6312 2.3769C12.0706 1.77878 11.27 1.40503 10.385 1.40503C8.39812 1.40503 6.93813 3.25878 7.38688 5.18315C4.83 5.05503 2.5625 3.83003 1.04438 1.96815C0.238125 3.35128 0.62625 5.16065 1.99625 6.0769C1.4925 6.06065 1.0175 5.92253 0.603125 5.6919C0.569375 7.11753 1.59125 8.45128 3.07125 8.74815C2.63813 8.86565 2.16375 8.89315 1.68125 8.80065C2.0725 10.0232 3.20875 10.9125 4.55625 10.9375C3.2625 11.9519 1.6325 12.405 0 12.2125C1.36187 13.0857 2.98 13.595 4.7175 13.595C10.4313 13.595 13.6594 8.7694 13.4644 4.44128C14.0656 4.0069 14.5875 3.46503 15 2.84815V2.84815Z"
+															fill="currentColor" />
+													</g>
+													<defs>
+														<clipPath>
+															<rect width="15" height="15" fill="white" />
+														</clipPath>
+													</defs>
+												</svg>
+
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M10 5.33325C10.9946 5.33325 11.9484 5.75468 12.6517 6.50482C13.3549 7.25497 13.75 8.27239 13.75 9.33325V13.9999H11.25V9.33325C11.25 8.97963 11.1183 8.64049 10.8839 8.39044C10.6495 8.14039 10.3315 7.99992 10 7.99992C9.66848 7.99992 9.35054 8.14039 9.11612 8.39044C8.8817 8.64049 8.75 8.97963 8.75 9.33325V13.9999H6.25V9.33325C6.25 8.27239 6.64509 7.25497 7.34835 6.50482C8.05161 5.75468 9.00544 5.33325 10 5.33325Z"
+														fill="currentColor" />
+													<path d="M3.75 6H1.25V14H3.75V6Z" fill="currentColor" />
+													<path
+														d="M2.5 3.99992C3.19036 3.99992 3.75 3.40296 3.75 2.66659C3.75 1.93021 3.19036 1.33325 2.5 1.33325C1.80964 1.33325 1.25 1.93021 1.25 2.66659C1.25 3.40296 1.80964 3.99992 2.5 3.99992Z"
+														fill="currentColor" />
+												</svg>
+
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M14.0879 4.0125C14.0136 3.71588 13.8624 3.44411 13.6495 3.22463C13.4366 3.00515 13.1696 2.84574 12.8754 2.7625C11.8004 2.5 7.50036 2.5 7.50036 2.5C7.50036 2.5 3.20036 2.5 2.12536 2.7875C1.83114 2.87074 1.56409 3.03015 1.3512 3.24963C1.1383 3.46911 0.9871 3.74088 0.912857 4.0375C0.716116 5.12847 0.61988 6.23519 0.625357 7.34375C0.618344 8.46065 0.714587 9.57581 0.912857 10.675C0.994707 10.9624 1.1493 11.2238 1.3617 11.434C1.5741 11.6443 1.83712 11.7961 2.12536 11.875C3.20036 12.1625 7.50036 12.1625 7.50036 12.1625C7.50036 12.1625 11.8004 12.1625 12.8754 11.875C13.1696 11.7918 13.4366 11.6323 13.6495 11.4129C13.8624 11.1934 14.0136 10.9216 14.0879 10.625C14.2831 9.54224 14.3793 8.44396 14.3754 7.34375C14.3824 6.22685 14.2861 5.11169 14.0879 4.0125V4.0125Z"
+														stroke="currentColor" stroke-linecap="round"
+														stroke-linejoin="round" />
+													<path d="M6.09375 9.38731L9.6875 7.34355L6.09375 5.2998V9.38731Z"
+														stroke="currentColor" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+
+											</a>
+										</li>
+									</ul>
+
+									<a href="#" class="feedback js--popup" data-popup="popup-form">
+										связаться с нами
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li><a href="#">События</a></li>
+					<li class="submenu-link">
+						<a href="#">Компания</a>
+						<div class="submenu">
+							<div class="container">
+								<ul class="submenu__list submenu__list--column-1">
+									<li><a href="#">О компании</a></li>
+									<li><a href="#">Наша команда</a></li>
+									<li><a href="#">Клиенты, партнеры</a></li>
+									<li><a href="#">Карьера</a></li>
+								</ul>
+
+								<div class="submenu__bottom flex flex--between flex--center">
+									<ul class="social flex">
+										<li>
+											<a href="#">
+												<svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M9.20703 1.08325H3.79036C2.29459 1.08325 1.08203 2.29581 1.08203 3.79159V9.20825C1.08203 10.704 2.29459 11.9166 3.79036 11.9166H9.20703C10.7028 11.9166 11.9154 10.704 11.9154 9.20825V3.79159C11.9154 2.29581 10.7028 1.08325 9.20703 1.08325Z"
+														stroke="currentColor" stroke-linecap="round"
+														stroke-linejoin="round" />
+													<path
+														d="M8.66537 6.15891C8.73222 6.60971 8.65522 7.07011 8.44532 7.47463C8.23543 7.87915 7.90332 8.20718 7.49625 8.41207C7.08918 8.61696 6.62786 8.68828 6.17792 8.61588C5.72798 8.54348 5.31232 8.33104 4.99007 8.00879C4.66782 7.68654 4.45539 7.27089 4.38299 6.82095C4.31059 6.371 4.3819 5.90969 4.5868 5.50262C4.79169 5.09554 5.11972 4.76344 5.52424 4.55354C5.92875 4.34365 6.38915 4.26665 6.83995 4.3335C7.29979 4.40168 7.7255 4.61596 8.0542 4.94466C8.38291 5.27337 8.59718 5.69908 8.66537 6.15891Z"
+														stroke="currentColor" stroke-linecap="round"
+														stroke-linejoin="round" />
+													<path d="M9.48047 3.52075H9.48547" stroke="currentColor"
+														stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg width="9" height="13" viewBox="0 0 9 13" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M8.0013 0.25H6.0013C5.11725 0.25 4.2694 0.57924 3.64428 1.16529C3.01916 1.75134 2.66797 2.5462 2.66797 3.375V5.25H0.667969V7.75H2.66797V12.75H5.33464V7.75H7.33464L8.0013 5.25H5.33464V3.375C5.33464 3.20924 5.40487 3.05027 5.5299 2.93306C5.65492 2.81585 5.82449 2.75 6.0013 2.75H8.0013V0.25Z"
+														fill="currentColor" />
+												</svg>
+
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<g>
+														<path
+															d="M15 2.84815C14.4481 3.09315 13.855 3.25815 13.2325 3.33253C13.8681 2.9519 14.3562 2.34878 14.5856 1.63003C13.9912 1.98253 13.3325 2.23878 12.6312 2.3769C12.0706 1.77878 11.27 1.40503 10.385 1.40503C8.39812 1.40503 6.93813 3.25878 7.38688 5.18315C4.83 5.05503 2.5625 3.83003 1.04438 1.96815C0.238125 3.35128 0.62625 5.16065 1.99625 6.0769C1.4925 6.06065 1.0175 5.92253 0.603125 5.6919C0.569375 7.11753 1.59125 8.45128 3.07125 8.74815C2.63813 8.86565 2.16375 8.89315 1.68125 8.80065C2.0725 10.0232 3.20875 10.9125 4.55625 10.9375C3.2625 11.9519 1.6325 12.405 0 12.2125C1.36187 13.0857 2.98 13.595 4.7175 13.595C10.4313 13.595 13.6594 8.7694 13.4644 4.44128C14.0656 4.0069 14.5875 3.46503 15 2.84815V2.84815Z"
+															fill="currentColor" />
+													</g>
+													<defs>
+														<clipPath>
+															<rect width="15" height="15" fill="white" />
+														</clipPath>
+													</defs>
+												</svg>
+
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M10 5.33325C10.9946 5.33325 11.9484 5.75468 12.6517 6.50482C13.3549 7.25497 13.75 8.27239 13.75 9.33325V13.9999H11.25V9.33325C11.25 8.97963 11.1183 8.64049 10.8839 8.39044C10.6495 8.14039 10.3315 7.99992 10 7.99992C9.66848 7.99992 9.35054 8.14039 9.11612 8.39044C8.8817 8.64049 8.75 8.97963 8.75 9.33325V13.9999H6.25V9.33325C6.25 8.27239 6.64509 7.25497 7.34835 6.50482C8.05161 5.75468 9.00544 5.33325 10 5.33325Z"
+														fill="currentColor" />
+													<path d="M3.75 6H1.25V14H3.75V6Z" fill="currentColor" />
+													<path
+														d="M2.5 3.99992C3.19036 3.99992 3.75 3.40296 3.75 2.66659C3.75 1.93021 3.19036 1.33325 2.5 1.33325C1.80964 1.33325 1.25 1.93021 1.25 2.66659C1.25 3.40296 1.80964 3.99992 2.5 3.99992Z"
+														fill="currentColor" />
+												</svg>
+
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M14.0879 4.0125C14.0136 3.71588 13.8624 3.44411 13.6495 3.22463C13.4366 3.00515 13.1696 2.84574 12.8754 2.7625C11.8004 2.5 7.50036 2.5 7.50036 2.5C7.50036 2.5 3.20036 2.5 2.12536 2.7875C1.83114 2.87074 1.56409 3.03015 1.3512 3.24963C1.1383 3.46911 0.9871 3.74088 0.912857 4.0375C0.716116 5.12847 0.61988 6.23519 0.625357 7.34375C0.618344 8.46065 0.714587 9.57581 0.912857 10.675C0.994707 10.9624 1.1493 11.2238 1.3617 11.434C1.5741 11.6443 1.83712 11.7961 2.12536 11.875C3.20036 12.1625 7.50036 12.1625 7.50036 12.1625C7.50036 12.1625 11.8004 12.1625 12.8754 11.875C13.1696 11.7918 13.4366 11.6323 13.6495 11.4129C13.8624 11.1934 14.0136 10.9216 14.0879 10.625C14.2831 9.54224 14.3793 8.44396 14.3754 7.34375C14.3824 6.22685 14.2861 5.11169 14.0879 4.0125V4.0125Z"
+														stroke="currentColor" stroke-linecap="round"
+														stroke-linejoin="round" />
+													<path d="M6.09375 9.38731L9.6875 7.34355L6.09375 5.2998V9.38731Z"
+														stroke="currentColor" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+
+											</a>
+										</li>
+									</ul>
+
+									<a href="#" class="feedback js--popup" data-popup="popup-form">
+										связаться с нами
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#" class="menu-btn"></a>
+						<div class="submenu">
+							<div class="container">
+								<ul class="submenu__list submenu__list--column-1 submenu-main">
+									<li>
+										<a href="#" class="js--mobile-menu">
+											Проекты
+											<span class="menu-arrow"></span>
+										</a>
+										<div class="submenu-block">
+											<div class="submenu-block__title h3">Проекты</div>
+											<ul class="submenu-block__menu">
+												<li><a href="#">Гостиницы</a></li>
+												<li><a href="#">Высотные и уникальные здания</a></li>
+												<li><a href="#">Многофункциональные комплексы</a></li>
+												<li><a href="#">Офисы</a></li>
+												<li><a href="#">Торговые комплексы</a></li>
+												<li><a href="#">Жилые здания</a></li>
+												<li><a href="#">Объекты культурного назначения</a></li>
+												<li><a href="#">Спортивные объекты</a></li>
+												<li><a href="#">Аквапарки</a></li>
+												<li><a href="#">Наружные сети и проекты организации строительства</a>
+												</li>
+												<li><a href="#">все проекты</a></li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a href="#" class="js--mobile-menu">
+											Услуги
+											<span class="menu-arrow"></span>
+										</a>
+										<div class="submenu-block">
+											<div class="submenu-block__title h3">Услуги</div>
+											<ul class="submenu-block__menu">
+												<li><a href="#">Генпроектирование</a></li>
+												<li><a href="#">Конструктивные решения</a></li>
+												<li><a href="#">Внутренние инженерные системы</a></li>
+												<li><a href="#">Спецразделы</a></li>
+												<li><a href="#">Информационное моделирование зданий / BIM</a></li>
+												<li><a href="#">Математическое моделирование процессов / CFD</a></li>
+												<li><a href="#">Консалтинговые услуги и технический аудит</a></li>
+												<li><a href="#">Сопровождение иностранных проектных компаний</a></li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a href="#">События</a>
+									</li>
+									<li>
+										<a href="#" class="js--mobile-menu">
+											Компания
+											<span class="menu-arrow"></span>
+										</a>
+										<div class="submenu-block">
+											<div class="submenu-block__title h3">Компания</div>
+											<ul class="submenu-block__menu">
+												<li><a href="#">О компании</a></li>
+												<li><a href="#">Наша команда</a></li>
+												<li><a href="#">Клиенты, партнеры</a></li>
+												<li><a href="#">Карьера</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+
+								<div class="event-menu">
+									<div class="h4">События</div>
+									<ul class="event-menu__list flex flex--center flex--between">
+										<li><a href="#"><img src="img/logos/logo-1.png" alt=""></a></li>
+										<li><a href="#"><img src="img/logos/logo-2.png" alt=""></a></li>
+										<li><a href="#"><img src="img/logos/logo-3.png" alt=""></a></li>
+										<li><a href="#"><img src="img/logos/logo-4.png" alt=""></a></li>
+										<li><a href="#"><img src="img/logos/logo-5.png" alt=""></a></li>
+										<li><a href="#"><img src="img/logos/logo-6.png" alt=""></a></li>
+									</ul>
+								</div>
+								<!-- /.event-menu -->
+
+								<div class="submenu__bottom flex flex--between flex--center">
+									<ul class="social flex">
+										<li>
+											<a href="#">
+												<svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M9.20703 1.08325H3.79036C2.29459 1.08325 1.08203 2.29581 1.08203 3.79159V9.20825C1.08203 10.704 2.29459 11.9166 3.79036 11.9166H9.20703C10.7028 11.9166 11.9154 10.704 11.9154 9.20825V3.79159C11.9154 2.29581 10.7028 1.08325 9.20703 1.08325Z"
+														stroke="currentColor" stroke-linecap="round"
+														stroke-linejoin="round" />
+													<path
+														d="M8.66537 6.15891C8.73222 6.60971 8.65522 7.07011 8.44532 7.47463C8.23543 7.87915 7.90332 8.20718 7.49625 8.41207C7.08918 8.61696 6.62786 8.68828 6.17792 8.61588C5.72798 8.54348 5.31232 8.33104 4.99007 8.00879C4.66782 7.68654 4.45539 7.27089 4.38299 6.82095C4.31059 6.371 4.3819 5.90969 4.5868 5.50262C4.79169 5.09554 5.11972 4.76344 5.52424 4.55354C5.92875 4.34365 6.38915 4.26665 6.83995 4.3335C7.29979 4.40168 7.7255 4.61596 8.0542 4.94466C8.38291 5.27337 8.59718 5.69908 8.66537 6.15891Z"
+														stroke="currentColor" stroke-linecap="round"
+														stroke-linejoin="round" />
+													<path d="M9.48047 3.52075H9.48547" stroke="currentColor"
+														stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg width="9" height="13" viewBox="0 0 9 13" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M8.0013 0.25H6.0013C5.11725 0.25 4.2694 0.57924 3.64428 1.16529C3.01916 1.75134 2.66797 2.5462 2.66797 3.375V5.25H0.667969V7.75H2.66797V12.75H5.33464V7.75H7.33464L8.0013 5.25H5.33464V3.375C5.33464 3.20924 5.40487 3.05027 5.5299 2.93306C5.65492 2.81585 5.82449 2.75 6.0013 2.75H8.0013V0.25Z"
+														fill="currentColor" />
+												</svg>
+
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<g>
+														<path
+															d="M15 2.84815C14.4481 3.09315 13.855 3.25815 13.2325 3.33253C13.8681 2.9519 14.3562 2.34878 14.5856 1.63003C13.9912 1.98253 13.3325 2.23878 12.6312 2.3769C12.0706 1.77878 11.27 1.40503 10.385 1.40503C8.39812 1.40503 6.93813 3.25878 7.38688 5.18315C4.83 5.05503 2.5625 3.83003 1.04438 1.96815C0.238125 3.35128 0.62625 5.16065 1.99625 6.0769C1.4925 6.06065 1.0175 5.92253 0.603125 5.6919C0.569375 7.11753 1.59125 8.45128 3.07125 8.74815C2.63813 8.86565 2.16375 8.89315 1.68125 8.80065C2.0725 10.0232 3.20875 10.9125 4.55625 10.9375C3.2625 11.9519 1.6325 12.405 0 12.2125C1.36187 13.0857 2.98 13.595 4.7175 13.595C10.4313 13.595 13.6594 8.7694 13.4644 4.44128C14.0656 4.0069 14.5875 3.46503 15 2.84815V2.84815Z"
+															fill="currentColor" />
+													</g>
+													<defs>
+														<clipPath>
+															<rect width="15" height="15" fill="white" />
+														</clipPath>
+													</defs>
+												</svg>
+
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M10 5.33325C10.9946 5.33325 11.9484 5.75468 12.6517 6.50482C13.3549 7.25497 13.75 8.27239 13.75 9.33325V13.9999H11.25V9.33325C11.25 8.97963 11.1183 8.64049 10.8839 8.39044C10.6495 8.14039 10.3315 7.99992 10 7.99992C9.66848 7.99992 9.35054 8.14039 9.11612 8.39044C8.8817 8.64049 8.75 8.97963 8.75 9.33325V13.9999H6.25V9.33325C6.25 8.27239 6.64509 7.25497 7.34835 6.50482C8.05161 5.75468 9.00544 5.33325 10 5.33325Z"
+														fill="currentColor" />
+													<path d="M3.75 6H1.25V14H3.75V6Z" fill="currentColor" />
+													<path
+														d="M2.5 3.99992C3.19036 3.99992 3.75 3.40296 3.75 2.66659C3.75 1.93021 3.19036 1.33325 2.5 1.33325C1.80964 1.33325 1.25 1.93021 1.25 2.66659C1.25 3.40296 1.80964 3.99992 2.5 3.99992Z"
+														fill="currentColor" />
+												</svg>
+
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M14.0879 4.0125C14.0136 3.71588 13.8624 3.44411 13.6495 3.22463C13.4366 3.00515 13.1696 2.84574 12.8754 2.7625C11.8004 2.5 7.50036 2.5 7.50036 2.5C7.50036 2.5 3.20036 2.5 2.12536 2.7875C1.83114 2.87074 1.56409 3.03015 1.3512 3.24963C1.1383 3.46911 0.9871 3.74088 0.912857 4.0375C0.716116 5.12847 0.61988 6.23519 0.625357 7.34375C0.618344 8.46065 0.714587 9.57581 0.912857 10.675C0.994707 10.9624 1.1493 11.2238 1.3617 11.434C1.5741 11.6443 1.83712 11.7961 2.12536 11.875C3.20036 12.1625 7.50036 12.1625 7.50036 12.1625C7.50036 12.1625 11.8004 12.1625 12.8754 11.875C13.1696 11.7918 13.4366 11.6323 13.6495 11.4129C13.8624 11.1934 14.0136 10.9216 14.0879 10.625C14.2831 9.54224 14.3793 8.44396 14.3754 7.34375C14.3824 6.22685 14.2861 5.11169 14.0879 4.0125V4.0125Z"
+														stroke="currentColor" stroke-linecap="round"
+														stroke-linejoin="round" />
+													<path d="M6.09375 9.38731L9.6875 7.34355L6.09375 5.2998V9.38731Z"
+														stroke="currentColor" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+
+											</a>
+										</li>
+									</ul>
+
+									<a href="#" class="feedback js--popup" data-popup="popup-form">
+										связаться с нами
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+
+				<div class="header__cta flex flex--center">
+					<a href="#" class="search-btn js--search">
+						<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M5.5 2C3.567 2 2 3.567 2 5.5C2 7.433 3.567 9 5.5 9C7.433 9 9 7.433 9 5.5C9 3.567 7.433 2 5.5 2ZM1 5.5C1 3.01472 3.01472 1 5.5 1C7.98528 1 10 3.01472 10 5.5C10 7.98528 7.98528 10 5.5 10C3.01472 10 1 7.98528 1 5.5Z"
+								fill="currentColor" />
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M7.97147 7.97144C8.16673 7.77618 8.48331 7.77618 8.67858 7.97144L10.8536 10.1464C11.0488 10.3417 11.0488 10.6583 10.8536 10.8535C10.6583 11.0488 10.3417 11.0488 10.1465 10.8535L7.97147 8.67855C7.77621 8.48329 7.77621 8.1667 7.97147 7.97144Z"
+								fill="currentColor" />
+						</svg>
+					</a>
+
+					<ul class="lang flex">
+						<li class="active"><a href="#">ru</a></li>
+						<li><a href="#">eng</a></li>
+					</ul>
+
+					<div class="search-block">
+						<div class="container">
+							<form action="#">
+								<div class="search__field">
+									<button type="submit" class="search-submit">
+										<svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M5.5 9.5C7.70914 9.5 9.5 7.70914 9.5 5.5C9.5 3.29086 7.70914 1.5 5.5 1.5C3.29086 1.5 1.5 3.29086 1.5 5.5C1.5 7.70914 3.29086 9.5 5.5 9.5Z"
+												stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M10.4992 10.5L8.32422 8.32495" stroke="currentColor"
+												stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+									<input type="search" class="search-input" placeholder="Поиск">
+
+									<a href="#" class="close-search"></a>
+								</div>
+								<div class="search-block__dropdown">
+									<div class="h4">Рекомендации поиска</div>
+									<ul class="search-block__dropdown__list">
+										<li><a href="#">проекты</a></li>
+										<li><a href="#">Услуги</a></li>
+										<li><a href="#">Компания</a></li>
+										<li><a href="#">События</a></li>
+									</ul>
+									<ul class="search-block__dropdown__helper">
+										<li><a href="#"><a href="#"></a></li>
+										<li><a href="#">Многофункциональный комплекс «Водный»</a></li>
+										<li><a href="#">Многофункциональный комплекс «Савеловский Сити»</a></li>
+										<li>
+											<a href="#">Многофункциональный комплекс Neva Towers</a></li>
+										<li><a href="#">Многофункциональный комплекс на улице Братьев Фонченко</a></li>
+										<li><a href="#">Жилой комплекс «Эталон-Сити»</a></li>
+										<li><a href="#">Жилой комплекс D1</a></li>
+										<li><a href="#">Многофункциональный комплекс «Водный»</a></li>
+										<li><a href="#">Многофункциональный комплекс «Савеловский Сити»</a></li>
+									</ul>
+								</div>
+							</form>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</header>
+		<main class="main">
+			<div class="top-line">
+				<div class="container flex flex--center flex--between">
+					<div class="h2 text-uppercase font-500">
+						Гостиницы
+					</div>
+					<a href="#" class="btn-arrow">
+						все проекты
+					</a>
+				</div>
+			</div>
+			<div class="projects-list flex flex--wrap">
+				<a href="#" class="project-item">
+					<img src="img/photo/projects/10.jpg" alt="">
+					<div class="project-item__descr">
+						<div class="h2 decor-line">
+							Гостиницы
+						</div>
+					</div>
+				</a>
+				<a href="#" class="project-item">
+					<img src="img/photo/projects/9.jpg" alt="">
+					<div class="project-item__descr">
+						<div class="h2 decor-line">
+							Высотные и уникальные здания
+						</div>
+					</div>
+				</a>
+				<a href="#" class="project-item">
+					<img src="img/photo/projects/1.jpg" alt="">
+					<div class="project-item__descr">
+						<div class="h2 decor-line">
+							Многофункциональные комплексы
+						</div>
+					</div>
+				</a>
+				<a href="#" class="project-item">
+					<img src="img/photo/projects/2.jpg" alt="">
+					<div class="project-item__descr">
+						<div class="h2 decor-line">
+							Офисы
+						</div>
+					</div>
+				</a>
+				<a href="#" class="project-item">
+					<img src="img/photo/projects/3.jpg" alt="">
+					<div class="project-item__descr">
+						<div class="h2 decor-line">
+							Торговые комплексы
+						</div>
+					</div>
+				</a>
+				<a href="#" class="project-item">
+					<img src="img/photo/projects/4.jpg" alt="">
+					<div class="project-item__descr">
+						<div class="h2 decor-line">
+							Жилые здания
+						</div>
+					</div>
+				</a>
+				<a href="#" class="project-item">
+					<img src="img/photo/projects/5.jpg" alt="">
+					<div class="project-item__descr">
+						<div class="h2 decor-line">
+							Объекты культурного назначения
+						</div>
+					</div>
+				</a>
+				<a href="#" class="project-item">
+					<img src="img/photo/projects/6.jpg" alt="">
+					<div class="project-item__descr">
+						<div class="h2 decor-line">
+							Спортивные объекты
+						</div>
+					</div>
+				</a>
+				<a href="#" class="project-item">
+					<img src="img/photo/projects/7.jpg" alt="">
+					<div class="project-item__descr">
+						<div class="h2 decor-line">
+							Аквапарки
+						</div>
+					</div>
+				</a>
+				<a href="#" class="project-item">
+					<img src="img/photo/projects/8.jpg" alt="">
+					<div class="project-item__descr">
+						<div class="h2 decor-line">
+							Наружные сети и Проекты организации строительства
+						</div>
+					</div>
+				</a>
+			</div>
+
+
+			<div class="cta">
+				<div class="container text-center">
+					<a href="#" class="feedback feedback--plus js--popup" data-popup="popup-form">
+						связаться с нами
+					</a>
+
+					<a href="#" class="to-top hide-sm"></a>
+				</div>
+			</div>
+
+		</main>
+		<footer class="footer">
+			<div class="container flex flex--center flex--between">
+				<div class="footer__left flex flex--center">
+					<a href="#" class="logo"></a>
+					<div class="copy">2020©ООО «Метрополис»</div>
+					<a href="#" class="to-top show-sm"></a>
+				</div>
+				<div class="footer__center">
+					<ul class="social flex">
+						<li>
+							<a href="#">
+								<svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M9.20703 1.08325H3.79036C2.29459 1.08325 1.08203 2.29581 1.08203 3.79159V9.20825C1.08203 10.704 2.29459 11.9166 3.79036 11.9166H9.20703C10.7028 11.9166 11.9154 10.704 11.9154 9.20825V3.79159C11.9154 2.29581 10.7028 1.08325 9.20703 1.08325Z"
+										stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+									<path
+										d="M8.66537 6.15891C8.73222 6.60971 8.65522 7.07011 8.44532 7.47463C8.23543 7.87915 7.90332 8.20718 7.49625 8.41207C7.08918 8.61696 6.62786 8.68828 6.17792 8.61588C5.72798 8.54348 5.31232 8.33104 4.99007 8.00879C4.66782 7.68654 4.45539 7.27089 4.38299 6.82095C4.31059 6.371 4.3819 5.90969 4.5868 5.50262C4.79169 5.09554 5.11972 4.76344 5.52424 4.55354C5.92875 4.34365 6.38915 4.26665 6.83995 4.3335C7.29979 4.40168 7.7255 4.61596 8.0542 4.94466C8.38291 5.27337 8.59718 5.69908 8.66537 6.15891Z"
+										stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M9.48047 3.52075H9.48547" stroke="currentColor" stroke-linecap="round"
+										stroke-linejoin="round" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg width="9" height="13" viewBox="0 0 9 13" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M8.0013 0.25H6.0013C5.11725 0.25 4.2694 0.57924 3.64428 1.16529C3.01916 1.75134 2.66797 2.5462 2.66797 3.375V5.25H0.667969V7.75H2.66797V12.75H5.33464V7.75H7.33464L8.0013 5.25H5.33464V3.375C5.33464 3.20924 5.40487 3.05027 5.5299 2.93306C5.65492 2.81585 5.82449 2.75 6.0013 2.75H8.0013V0.25Z"
+										fill="currentColor" />
+								</svg>
+
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g>
+										<path
+											d="M15 2.84815C14.4481 3.09315 13.855 3.25815 13.2325 3.33253C13.8681 2.9519 14.3562 2.34878 14.5856 1.63003C13.9912 1.98253 13.3325 2.23878 12.6312 2.3769C12.0706 1.77878 11.27 1.40503 10.385 1.40503C8.39812 1.40503 6.93813 3.25878 7.38688 5.18315C4.83 5.05503 2.5625 3.83003 1.04438 1.96815C0.238125 3.35128 0.62625 5.16065 1.99625 6.0769C1.4925 6.06065 1.0175 5.92253 0.603125 5.6919C0.569375 7.11753 1.59125 8.45128 3.07125 8.74815C2.63813 8.86565 2.16375 8.89315 1.68125 8.80065C2.0725 10.0232 3.20875 10.9125 4.55625 10.9375C3.2625 11.9519 1.6325 12.405 0 12.2125C1.36187 13.0857 2.98 13.595 4.7175 13.595C10.4313 13.595 13.6594 8.7694 13.4644 4.44128C14.0656 4.0069 14.5875 3.46503 15 2.84815V2.84815Z"
+											fill="currentColor" />
+									</g>
+									<defs>
+										<clipPath>
+											<rect width="15" height="15" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M10 5.33325C10.9946 5.33325 11.9484 5.75468 12.6517 6.50482C13.3549 7.25497 13.75 8.27239 13.75 9.33325V13.9999H11.25V9.33325C11.25 8.97963 11.1183 8.64049 10.8839 8.39044C10.6495 8.14039 10.3315 7.99992 10 7.99992C9.66848 7.99992 9.35054 8.14039 9.11612 8.39044C8.8817 8.64049 8.75 8.97963 8.75 9.33325V13.9999H6.25V9.33325C6.25 8.27239 6.64509 7.25497 7.34835 6.50482C8.05161 5.75468 9.00544 5.33325 10 5.33325Z"
+										fill="currentColor" />
+									<path d="M3.75 6H1.25V14H3.75V6Z" fill="currentColor" />
+									<path
+										d="M2.5 3.99992C3.19036 3.99992 3.75 3.40296 3.75 2.66659C3.75 1.93021 3.19036 1.33325 2.5 1.33325C1.80964 1.33325 1.25 1.93021 1.25 2.66659C1.25 3.40296 1.80964 3.99992 2.5 3.99992Z"
+										fill="currentColor" />
+								</svg>
+
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M14.0879 4.0125C14.0136 3.71588 13.8624 3.44411 13.6495 3.22463C13.4366 3.00515 13.1696 2.84574 12.8754 2.7625C11.8004 2.5 7.50036 2.5 7.50036 2.5C7.50036 2.5 3.20036 2.5 2.12536 2.7875C1.83114 2.87074 1.56409 3.03015 1.3512 3.24963C1.1383 3.46911 0.9871 3.74088 0.912857 4.0375C0.716116 5.12847 0.61988 6.23519 0.625357 7.34375C0.618344 8.46065 0.714587 9.57581 0.912857 10.675C0.994707 10.9624 1.1493 11.2238 1.3617 11.434C1.5741 11.6443 1.83712 11.7961 2.12536 11.875C3.20036 12.1625 7.50036 12.1625 7.50036 12.1625C7.50036 12.1625 11.8004 12.1625 12.8754 11.875C13.1696 11.7918 13.4366 11.6323 13.6495 11.4129C13.8624 11.1934 14.0136 10.9216 14.0879 10.625C14.2831 9.54224 14.3793 8.44396 14.3754 7.34375C14.3824 6.22685 14.2861 5.11169 14.0879 4.0125V4.0125Z"
+										stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M6.09375 9.38731L9.6875 7.34355L6.09375 5.2998V9.38731Z"
+										stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__right flex flex--center">
+					<a href="#">Разработано в <span>liqium</span></a>
+				</div>
+			</div>
+		</footer>
+
+		<div id="overlay"></div>
+		<div class="popup" id="popup-form">
+			<a href="#" class="close-popup"></a>
+			<div class="popup-content">
+				<form action="#">
+					<div class="input-wrapper">
+						<span class="input input--nariko">
+							<input class="input__field input__field--nariko" type="text" id="input-3" required>
+							<label class="input__label input__label--nariko" for="input-3">
+								<span class="input__label-content input__label-content--nariko">Имя</span>
+							</label>
+						</span>
+					</div>
+					<div class="input-wrapper">
+						<span class="input input--nariko">
+							<input class="input__field input__field--nariko" type="text" id="phone" required>
+							<label class="input__label input__label--nariko" for="phone">
+								<span class="input__label-content input__label-content--nariko">Телефон</span>
+							</label>
+						</span>
+					</div>
+					<div class="input-wrapper">
+						<span class="input input--nariko">
+							<input class="input__field input__field--nariko" type="email" id="input-4" required>
+							<label class="input__label input__label--nariko" for="input-4">
+								<span class="input__label-content input__label-content--nariko">Почта</span>
+							</label>
+						</span>
+					</div>
+
+					<div class="input-wrapper textarea-wrapper">
+						<textarea class="textarea" placeholder="Текст сообщения"></textarea>
+						<div class="chars-counter">
+							<span class="count">0 </span>
+							<span class="max-chars"> / 1000</span>
+						</div>
+					</div>
+
+					<div class="agree">
+						<input type="checkbox" id="agree" checked="">
+						<label for="agree">
+							Я согласен с <a href="#">условиями обработки</a> персональных данных
+						</label>
+					</div>
+
+					<input type="submit" class="submit-btn" value="Отправить">
+				</form>
+			</div>
+		</div>
+	</div><!-- end wrapper -->
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+
+</html>
