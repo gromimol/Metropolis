@@ -3590,7 +3590,7 @@ span.input {
     flex-direction: column; }
   .document-item {
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 0 20px 0;
     border-right: none !important; }
     .document-item .h2 {
       margin-bottom: 20px;
@@ -3681,7 +3681,7 @@ span.input {
       margin-bottom: 30px; }
   .document-row {
     border: none; }
-  .menu-btn .active {
+  .menu-btn.active {
     -webkit-transform: translateY(4px);
     -ms-transform: translateY(4px);
     transform: translateY(4px); }
@@ -3690,15 +3690,16 @@ span.input {
   .img-descr {
     margin-top: 0; }
   .document-item {
-    border: none; }
+    border: none;
+    position: relative; }
   .document-item::after {
     content: '';
     height: 2px;
     width: calc(100% + 30px);
     background-color: rgba(232, 232, 232, 0.8);
     left: -15px;
-    position: relative;
-    margin-top: 30px; }
+    position: absolute;
+    bottom: 0; }
   .menu-btn::before {
     margin-top: -3px; }
   .menu-btn::after {

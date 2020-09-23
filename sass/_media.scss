@@ -865,7 +865,7 @@
 
 	.document-item {
 		width: 100%;
-		padding: 20px 0;
+		padding: 10px 0 20px 0;
 		border-right: none !important;
 
 		.h2 {
@@ -1021,7 +1021,7 @@
 		border: none;
 	}
 	.menu-btn  {
-		.active {
+		&.active {
 			transform: translateY(4px);
 		}
 	}
@@ -1033,6 +1033,7 @@
 	}
 	.document-item {
 		border: none;
+		position: relative;
 	}
 	.document-item::after {
 		content: '';
@@ -1040,8 +1041,8 @@
 		width: calc(100% + 30px);
 		background-color: rgba(#E8E8E8, .8);
 		left: -15px;
-		position: relative;
-		margin-top: 30px;
+		position: absolute;
+    	bottom: 0;
 		
 	}
 	// .document__img {

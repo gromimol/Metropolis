@@ -20,8 +20,8 @@ $(document).ready(function () {
     fade: true,
     autoplay: true,
   });
-
-  $(".project-detail-item").hover(
+  if($(window).width() > 1200) {
+    $(".project-detail-item").hover(
       function () {
         $(this).closest(".project-detail-item").addClass("active");
         $(this)
@@ -36,7 +36,16 @@ $(document).ready(function () {
         .find(".project-detail-item__content")
         .slideToggle();
     }
-  );
+  ); 
+  }
+  else {
+    $(".team-detail__projects__item").on("click", function(){
+      $(this).closest(".project-detail-item").toggleClass("active");
+      $(this).next(".project-detail-item__content").slideToggle();
+    })
+  }
+  
+
   $(".header").hover(
     function () {
       $("body").addClass("white-header");
