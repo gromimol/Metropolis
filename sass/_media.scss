@@ -1014,21 +1014,35 @@
 			margin-bottom: 30px;
 		}
 	}
-}
-
-/*767*/
 
 
-/*320*/
-
-@media(max-width: 320px) {
+	// my code
+	.document-row {
+		border: none;
+	}
+	.menu-btn  {
+		.active {
+			transform: translateY(4px);
+		}
+	}
+	.document-row:last-child {
+		border: none;
+	}
 	.img-descr {
 		margin-top: 0;
 	}
-	#presentation{
-		.document-item:first-child{
-			border-bottom: 1px solid rgba(232, 232, 232, 0.8);
-		}
+	.document-item {
+		border: none;
+	}
+	.document-item::after {
+		content: '';
+		height: 2px;
+		width: calc(100% + 30px);
+		background-color: rgba(#E8E8E8, .8);
+		left: -15px;
+		position: relative;
+		margin-top: 30px;
+		
 	}
 	// .document__img {
 	// 	align-items: flex-end;
@@ -1064,4 +1078,13 @@
 	.contact-item-last {
 		margin: 0;
 	}
+}
+
+/*767*/
+
+
+/*320*/
+
+@media(max-width: 320px) {
+	
  }
