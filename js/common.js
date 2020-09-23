@@ -14,13 +14,6 @@ $(document).ready(function () {
     });
   });
 
-  $(".main-slider").slick({
-    arrows: false,
-    dots: true,
-    fade: true,
-    autoplay: true,
-  });
-
   $(".header").hover(
     function () {
       $("body").addClass("white-header");
@@ -29,6 +22,13 @@ $(document).ready(function () {
       $("body").removeClass("white-header");
     }
   );
+
+  $(".main-slider").slick({
+    arrows: false,
+    dots: true,
+    fade: true,
+    autoplay: true,
+  });
 
   $(".menu-btn").on("click", function (e) {
     e.preventDefault();
@@ -212,7 +212,7 @@ $(document).ready(function () {
     }
   );
 
-  input
+  // input
   $(".input__field").change(function () {
     var $this = $(this);
     var $thisInput = $this.find("input");
