@@ -15,12 +15,8 @@ $(document).ready(function () {
   });
 
 
-  $(".main-slider").slick({
-    arrows: false,
-    dots: true,
-    fade: true,
-    autoplay: true,
-  });
+ 
+
   if ($(window).width() > 1200) {
     $(".project-detail-item").hover(
       function () {
@@ -44,6 +40,7 @@ $(document).ready(function () {
       $(this).next(".project-detail-item__content").slideToggle();
     })
   }
+
 
   $(".header").hover(
     function () {
@@ -160,6 +157,7 @@ $(document).ready(function () {
     dots: true,
     arrows: false,
   });
+
   $(".partners__list-slider").slick({
     slidesPerRow: 5,
     rows: 3,
@@ -188,6 +186,7 @@ $(document).ready(function () {
       },
     ],
   });
+  
   $(".related-slider").slick({
     variableWidth: true,
     arrows: false,
@@ -226,6 +225,7 @@ $(document).ready(function () {
 
 
   //input
+
   $(".input__field").change(function () {
     var $this = $(this);
     var $thisInput = $this.find("input");
