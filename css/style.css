@@ -1379,14 +1379,22 @@ a.btn-arrow:hover {
     opacity: .5; }
 
 /*project-detail*/
+.inner-page-top {
+  margin-top: -81px; }
+
 .img-group .project-item {
-  border: none;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
-  flex-grow: 1; }
+  flex-grow: 1;
+  border-top: none;
+  border-bottom: none;
+  border-left: none; }
 
 .img-group .h1 {
   font-size: 36px; }
+
+.img-group:first-child {
+  border-right: 1px solid #fff; }
 
 .tag-list {
   padding: 40px 0 30px; }
@@ -1546,7 +1554,8 @@ a.btn-arrow:hover {
   .related-slide .project-item {
     width: 100%;
     height: 100%;
-    border: none; }
+    border: none;
+    background-color: rgba(0, 0, 0, 0.2); }
     .related-slide .project-item img {
       width: 100%;
       height: 100%;
@@ -1573,6 +1582,9 @@ a.btn-arrow:hover {
 .slick-slide {
   border-right: 1px solid #fff;
   border-left: 1px solid #fff; }
+
+.plug {
+  width: 720px; }
 
 /*inner-page*/
 .inner-page .header {
@@ -1871,8 +1883,6 @@ a.event-item:hover .event-item__logo img {
     width: 25%;
     padding: 0 10px;
     margin-bottom: 15px; }
-    .company-members-names li a:hover {
-      color: var(--green); }
 
 .more {
   display: table;
@@ -3404,7 +3414,9 @@ span.input {
   .related-slider {
     margin-top: 30px; }
     .related-slider .slick-dots {
-      bottom: -20px; }
+      bottom: -37px; }
+  .slider-one .slick-dots {
+    bottom: 2px; }
   .related-slide {
     width: auto;
     width: 280px;
@@ -3428,7 +3440,7 @@ span.input {
   .text-block p {
     font-size: 14px; }
   .inner-page-top .main-screen {
-    height: 270px; }
+    height: 350px; }
   .inner-page-block__item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3667,3 +3679,32 @@ span.input {
       margin-bottom: 30px; } }
 
 /*767*/
+/*320*/
+@media (max-width: 320px) {
+  .img-descr {
+    margin-top: 0; }
+  #presentation .document-item:first-child {
+    border-bottom: 1px solid rgba(232, 232, 232, 0.8); }
+  .menu-btn::before {
+    margin-top: -3px; }
+  .menu-btn::after {
+    margin-bottom: -3px; }
+  .menu-btn.active::after {
+    margin-bottom: 0px; }
+  .menu-btn.active::before {
+    margin-bottom: 0px; }
+  .menu-btn.active::after {
+    -webkit-transform: rotate(-45deg) translate(5px, -6px);
+    -ms-transform: rotate(-45deg) translate(5px, -6px);
+    transform: rotate(-45deg) translate(5px, -6px); }
+  .project-item img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 350px; }
+  .container {
+    max-width: none; }
+  .notice::before {
+    top: -1%;
+    left: -18px; }
+  .contact-item-last {
+    margin: 0; } }
