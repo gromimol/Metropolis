@@ -14,13 +14,14 @@ $(document).ready(function () {
     });
   });
 
+
   $(".main-slider").slick({
     arrows: false,
     dots: true,
     fade: true,
     autoplay: true,
   });
-  if($(window).width() > 1200) {
+  if ($(window).width() > 1200) {
     $(".project-detail-item").hover(
       function () {
         $(this).closest(".project-detail-item").addClass("active");
@@ -29,22 +30,20 @@ $(document).ready(function () {
           .find(".project-detail-item__content")
           .slideToggle();
       },
-    function () {
-      $(this).closest(".project-detail-item").removeClass("active");
-      $(this)
-        .closest(".project-detail-item")
-        .find(".project-detail-item__content")
-        .slideToggle();
-    }
-  ); 
-  }
-  else {
-    $(".team-detail__projects__item").on("click", function(){
+      function () {
+        $(this).closest(".project-detail-item").removeClass("active");
+        $(this)
+          .closest(".project-detail-item")
+          .find(".project-detail-item__content")
+          .slideToggle();
+      }
+    );
+  } else {
+    $(".team-detail__projects__item").on("click", function () {
       $(this).closest(".project-detail-item").toggleClass("active");
       $(this).next(".project-detail-item__content").slideToggle();
     })
   }
-  
 
   $(".header").hover(
     function () {
@@ -54,6 +53,13 @@ $(document).ready(function () {
       $("body").removeClass("white-header");
     }
   );
+
+  $(".main-slider").slick({
+    arrows: false,
+    dots: true,
+    fade: true,
+    autoplay: true,
+  });
 
   $(".menu-btn").on("click", function (e) {
     e.preventDefault();
@@ -217,6 +223,7 @@ $(document).ready(function () {
       },
     ],
   });
+
 
   //input
   $(".input__field").change(function () {
