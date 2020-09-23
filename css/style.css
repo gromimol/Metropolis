@@ -1722,9 +1722,24 @@ a.btn-arrow:hover {
     color: var(--green); }
 
 .full-width-img {
+  position: relative;
   margin: 40px 0; }
   .full-width-img img {
     width: 100%; }
+
+.full-width-img__before, .full-width-img__after {
+  position: absolute;
+  height: 100%;
+  width: 10%;
+  background-color: #fff;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+.full-width-img__after {
+  right: 0; }
+
+.full-width-img__before {
+  left: 0; }
 
 /* my code */
 /* / my code */

@@ -16,6 +16,9 @@
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<script src="js/wow.min.js"></script>
+	<script>new WOW().init();</script>
 
 
 </head>
@@ -691,6 +694,10 @@
 
 
 				<div class="full-width-img">
+					<!-- блоки нужны для анимации картинки -->
+					<div class="full-width-img__before wow slideOutLeft" data-wow-delay=".2s" data-wow-duration="10s" data-wow-offset="0" ></div>
+					<div class="full-width-img__after wow slideOutRight" data-wow-delay=".2s" data-wow-duration="10s" data-wow-offset="0"></div>
+					<!-- блоки нужны для анимации картинки -->
 					<img src="img/photo/photo_lg.jpg" alt="">
 					<div class="container container--lt">
 						<span class="img-descr">С точностью до дуновения ветра</span>
